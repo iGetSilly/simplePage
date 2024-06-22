@@ -1,0 +1,39 @@
+.conteiner-contato {
+    width: 66vw;
+    margin: 2% auto;
+    border: 1px solid #41db39;
+    box-shadow: 0px -1px 15px #41DB39;
+    background: rgb(18, 18, 18);
+    border-radius: 20px;
+}
+
+.conteiner-contato form {
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.conteiner-contato label {
+    padding: 20px 20px 20px 0;
+}
+
+.conteiner-contato input {
+    padding: 10px;
+    outline: none;
+}
+
+.conteiner-contato textarea {
+    padding: 20px;
+    outline: none;
+}
+
+#btn-enviar {
+    border-radius: 20px;
+    background: #41DB39;
+    border: #41DB39 1px solid;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.2vw;
+}

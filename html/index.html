@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tópico simples - Modelo 01</title>
     <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/form.css" />
     <link rel="stylesheet" href="/css/hero.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,6 +53,17 @@
         <img class="logos" src="../img/Group 2.svg" alt="logo CSS">
         <img class="logos" src="../img/Git_icon.svg" alt="logo JS">
       </div>
+    </section>
+    <section class="conteiner-contato">
+      <form  action="https://formsubmit.co/iuoyyp@gmail.com" method="POST">
+        <label for="name">Nome</label>
+        <input type="text" name="name">
+        <label for="email">E-mail</label>
+        <input type="email" name="email">
+        <label for="question">Mensagem</label>
+        <textarea name="question" cols="50" rows="15"></textarea>
+        <input type="submit" value="Enviar" id="btn-enviar">
+      </form>
     </section>
   </body>
 </html>
