@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Font */
+/* <uniquifier>: Use a unique and descriptive class name
+   <weight>: Use a value from 200 to 900 */
+
+body {
+    height: 100vh;
+    background-image: url("/img/bg.jpg");
+    color: white;
+    font-size: 1.3vw;
+}
+
+.reddit-mono-font {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/* Estilização da nav */
+
+.container-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+    width: 66vw;
+    margin: 0 auto;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px -1px 15px #41DB39;
+    border-left: 1px solid #41DB39;
+    border-right: 1px solid #41DB39;
+    border-bottom: 1px solid #41DB39;
+    background-color: rgb(18, 18, 18);
+    transition: ease-in 1s;
+}
+
+.container-nav-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.container-nav-ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.container-nav-ul li:hover a {
+    border: 1px solid #41DB39;
+    
+    transform: skewX(-20deg);
+    text-shadow: 0px 0px 16px #41DB39 ;
+    color: #41DB39;
+    
+}
+
+.container-nav-ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.container-nav-ul li a:active {
+    background-color: #41DB39;
+}
+
+#logo-nav {
+    float: left;
+    width: 8vw;
+    margin: 0 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.conteiner-carousel {
+    margin: 0 auto;
+    width: 66vw;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    position: relative;
+    transition: ease-in 1s;
+}
+
+.carousel-track {
+    animation: scroll 35s linear infinite;
+    
+}
+
+.logos {
+    height: 200px;
+    margin: 20px;
+}
+
+
+.conteiner-carousel:before, .conteiner-carousel:after {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 75px;
+    height: 100%;
+    z-index: 2;
+}
+.conteiner-carousel:before {
+    left: 0;
+    background: linear-gradient(to left, transparent, #41DB39);
+}
+.conteiner-carousel:after {
+    right: 0;
+    background: linear-gradient(to right, transparent, #41DB39);
+}
+
+.conteiner-carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+.carousel-track img:hover {
+    scale: 1.2;
+}
