@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/form.css" />
     <link rel="stylesheet" href="/css/hero.css" />
+    <link rel="stylesheet" href="/css/endereco.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,8 +23,8 @@
         <ul class="container-nav-ul ">
           <a href="/"><img id="logo-nav" src="../img/Logo clara.svg" alt=""></a>
           <li class="nav-item "><a href="/html/index.html">Home</a></li>
-          <li class="nav-item"><a href="/">Contato</a></li>
-          <li class="nav-item"><a href="/">Endereço</a></li>
+          <li class="nav-item"><a href="#contato">Contato</a></li>
+          <li class="nav-item"><a href="#endereco">Endereço</a></li>
           <li class="nav-item"><a href="/">Sobre mim</a></li>  
         </ul>
       </nav>
@@ -54,7 +55,7 @@
         <img class="logos" src="../img/Git_icon.svg" alt="logo JS">
       </div>
     </section>
-    <section class="conteiner-contato">
+    <section id="contato"class="conteiner-contato">
       <form  action="https://formsubmit.co/iuoyyp@gmail.com" method="POST">
         <label for="name">Nome</label>
         <input type="text" name="name">
@@ -64,6 +65,15 @@
         <textarea name="question" cols="50" rows="15"></textarea>
         <input type="submit" value="Enviar" id="btn-enviar">
       </form>
+    </section>
+    <section class="conteiner-endereco" id="endereco">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245795.84561329352!2d-48.102170221627354!3d-15.721487020958167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d18df9ae275%3A0x738470e469754a24!2zQnJhc8OtbGlhLCBERg!5e0!3m2!1spt-BR!2sbr!4v1719103280619!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer class="footer">
+      <p>Site feito por </p>
+      <a href="/html/index.html"><img id="logo-nav" src="../img/Logo clara.svg" alt=""></a>
+    </footer>
+
     </section>
   </body>
 </html>

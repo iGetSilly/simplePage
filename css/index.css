@@ -86,6 +86,8 @@ body {
     margin: 0 20px;
 }
 
+/* Estilização do carousel */
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -94,6 +96,7 @@ body {
         transform: translateX(-100%);
     }
 }
+
 
 .conteiner-carousel {
     margin: 0 auto;
@@ -141,4 +144,21 @@ body {
 
 .carousel-track img:hover {
     scale: 1.2;
+}
+
+/* Estilização do footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+    width: 66vw;
+    border-radius: 20px 20px 0 0;
+    margin: 0 auto;
+
+    background-color: rgb(18, 18, 18);
+    border: #41DB39;
+    box-shadow: 0px -1px 15px #41DB39;
+    
 }
