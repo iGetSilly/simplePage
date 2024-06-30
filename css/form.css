@@ -1,4 +1,7 @@
 .conteiner-contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 66vw;
     margin: 2% auto;
     border: 1px solid #41db39;
@@ -36,4 +39,14 @@
     margin-top: 20px;
     color: white;
     font-size: 1.2vw;
+    cursor: pointer;
+}
+#btn-enviar:hover {
+    background: #2d9627;
+}
+
+.conteiner-contato iframe {
+    margin: 20px;
+    width: 50%;
+    border-radius: 20px;
 }

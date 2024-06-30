@@ -1,0 +1,27 @@
+.sobreMim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66vw;
+    height: 70vh;
+    background-color: #121212;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0px -1px 15px #41DB39;
+    border: #41DB39 1px solid;
+    
+}
+
+.sobreMim p {
+    padding: 20px;
+    font-size: 1em;
+}
+
+.sobreMim img {
+    box-sizing: border-box;
+    height: 90%;
+    margin: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0px -1px 15px #000000;
+
+}
